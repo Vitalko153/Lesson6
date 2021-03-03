@@ -1,28 +1,25 @@
-public class Dog {
+public class Dog extends Animal {
     String name;
-    int dogRun = 500;
-    int dogSwim = 10;
+        int maxLengthRun = 500;
+        int maxLengthSwim = 10;
 
-    Dog(String name){
-        this.name = name;
-    }
-
-    public void run(int lengthBarrier){
-        if(dogRun > lengthBarrier) {
+        Dog(String name) {
+            this.name = name;
+        }
+    public void run(int lengthBarrier) {
+        if (maxLengthRun > lengthBarrier) {
             System.out.println(name + " пробежал " + lengthBarrier);
         }
-        if(dogRun < lengthBarrier){
-            System.out.println(name + " пробежал " + dogRun);
+        if (maxLengthRun < lengthBarrier) {
+            System.out.println(name + " пробежал " + maxLengthRun);
         }
     }
-
-    public void swim(int lengthPull){
-        if(dogSwim > lengthPull) {
-            System.out.println(name + " проплыла " + lengthPull);
+    public void swim(int lengthPull) {
+        if (maxLengthSwim > lengthPull) {
+            System.out.println(name + " проплыл " + lengthPull);
         }
-        if(dogSwim < lengthPull){
-            System.out.println(name + " проплыла " + dogSwim);
+        if (maxLengthSwim < lengthPull) {
+            System.out.println(name + " проплыл " + maxLengthSwim);
         }
-
     }
 }

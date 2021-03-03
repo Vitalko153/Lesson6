@@ -1,27 +1,26 @@
-public class Cat {
+public class Cat extends Animal {
     String name;
-    int catRun = 200;
-    int catSwim = 0;
+    int maxLengthRun = 200;
+    int maxLengthSwim = 0;
 
     Cat(String name){
         this.name = name;
     }
-    
+
     public void run(int lengthBarrier) {
-        if (catRun > lengthBarrier) {
+        if (maxLengthRun > lengthBarrier) {
             System.out.println(name + " пробежал " + lengthBarrier);
         }
-        if (catRun < lengthBarrier) {
-            System.out.println(name + " пробежал " + catRun);
+        if (maxLengthRun < lengthBarrier) {
+            System.out.println(name + " пробежал " + maxLengthRun);
         }
     }
-
     public void swim(int lengthPull) {
-        if (catSwim > lengthPull) {
+        if (maxLengthSwim > lengthPull) {
             System.out.println(name + " проплыл " + lengthPull);
         }
-        if (catSwim < lengthPull) {
-            System.out.println(name + " проплыл " + catSwim);
+        if (maxLengthSwim < lengthPull) {
+            System.out.println(name + " проплыл " + maxLengthSwim);
         }
     }
 }
