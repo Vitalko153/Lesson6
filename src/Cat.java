@@ -6,8 +6,7 @@ public class Cat {
     Cat(String name){
         this.name = name;
     }
-
-
+    
     public void run(int lengthBarrier) {
         if (catRun > lengthBarrier) {
             System.out.println(name + " пробежал " + lengthBarrier);

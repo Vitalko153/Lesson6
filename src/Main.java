@@ -10,6 +10,8 @@ public class Main {
         bobik.run(lengthBarrier);
         barsic.swim(lengthPull);
         bobik.swim(lengthPull);
+
+
     }
 
 }
